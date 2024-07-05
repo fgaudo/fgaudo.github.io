@@ -1,0 +1,21 @@
+---
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head><title>Francesco Gaudenzi - CV</title></head>
+	<link rel="stylesheet" href="/assets/css/style.css" />
+<body>
+
+	<p>bison</p>
+	<ul>
+	{% for nextrek in site.nextrek %}
+	<li>
+		<header><h1>{{nextrek.title}}</h1><p>client: {{nextrek.client}}</p></header>
+		{{ nextrek.content | markdownify }}
+	</li>
+	{% endfor %}
+	</ul>
+</body>
+
+</html>

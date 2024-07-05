@@ -1,0 +1,5 @@
+collections:
+  - nextrek
+  - self
+
+permalink: /:categories/:year/:month/:day/:title.xhtml
